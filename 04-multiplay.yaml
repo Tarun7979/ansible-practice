@@ -11,7 +11,7 @@
         msg: "This is task 2"
 
 - name: Play 2
-  hosts: local
+  hosts: localhost
   connection: local
   tasks:
     - name: print play2 task1
