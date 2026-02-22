@@ -12,3 +12,18 @@
     - name: print variables from prompt
       debug:
         msg: "The name is {{ name }} and the version is {{ version }}"
+
+- name: variables from prompt
+  hosts: localhost
+  connection: local
+  vars_prompt:
+    - name: "name"
+      prompt: "Enter the name"
+      private: yes
+    - name: "version"
+      prompt: "Enter the version"
+      private: yes
+  tasks:
+    - name: print variables from prompt
+      debug:
+        msg: "The name is {{ name }} and the version is {{ version }}"
