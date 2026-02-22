@@ -1,0 +1,10 @@
+- name: play with variables
+  hosts: localhost
+  connection: local
+  vars:
+    name: Ansible
+    version: 2.14
+  tasks:
+    - name: print variables
+      debug:
+        msg: "The name is {{ name }} and the version is {{ version }}"  
