@@ -1,0 +1,5 @@
+- name: writing playbook
+  hosts: worker
+  tasks:
+    - name: ping the server
+      ping:
