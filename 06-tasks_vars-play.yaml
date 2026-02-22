@@ -1,0 +1,17 @@
+- name: task level variables
+  hosts: localhost
+  connection: local
+  vars: 
+    name: Ansible Play
+    version: 2.14
+  tasks:
+    - name: print task level variable
+      debug:
+        msg: "The name is {{ name }} and the version is {{ version }}"
+    
+    - name: print task level variable with override
+      debug:  
+        msg: "The name is {{ name }} and the version is {{ version }}" 
+      vars:
+        name: Ansible Task
+        version: 2.15
