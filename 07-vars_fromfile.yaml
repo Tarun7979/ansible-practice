@@ -1,0 +1,9 @@
+- name: vars from file
+  hosts: localhost
+  connection: local
+  vars_files:
+    - vars.yaml
+  tasks:
+    - name: print variables from file
+      debug:
+        msg: "The name is {{ name }} and the version is {{ version }}"
