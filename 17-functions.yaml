@@ -23,24 +23,24 @@
 
   - name: convert list into map
     vars:
-      name::
+      Name::
       - {'key': 'firstname', 'value': 'Tarun'}
       - {'key': 'lastname', 'value': 'Kumar'}
       - {'key': 'age', 'value': 25}
     ansible.builtin.debug:
-      msg: "Name: {{ name | items2dict  }}"
+      msg: "Name: {{ Name | items2dict  }}"
 
   - name: convert to uppercase
     vars:
-      name: "Tarun Kumar P"
+      Name: "Tarun Kumar P"
     ansible.builtin.debug:
-      msg: "Hello {{ name | upper }}"
+      msg: "Hello {{ Name | upper }}"
 
   - name: convert to lowercase
     vars:
-      name: "Tarun Kumar P"
+      Name: "Tarun Kumar P"
     ansible.builtin.debug:
-      msg: "Hello {{ name | lower }}"
+      msg: "Hello {{ Name | lower }}"
 
   - name: check IP address is valid or not
     vars:
