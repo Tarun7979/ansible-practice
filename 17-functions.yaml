@@ -23,7 +23,7 @@
 
   - name: convert list into map
     vars:
-      Name::
+      Name:
       - {'key': 'firstname', 'value': 'Tarun'}
       - {'key': 'lastname', 'value': 'Kumar'}
       - {'key': 'age', 'value': 25}
