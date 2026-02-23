@@ -14,12 +14,12 @@
 
   - name: convert map into list
     vars:
-      name:
+      Name:
         firstname: Tarun
         lastname: Kumar
         age: 25
     ansible.builtin.debug:
-      msg: "Course Info: {{ name | dict2items  }}"
+      msg: "Name Info: {{ Name | dict2items  }}"
 
   - name: convert list into map
     vars:
