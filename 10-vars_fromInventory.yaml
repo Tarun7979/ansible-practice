@@ -1,0 +1,6 @@
+- name: vars from inventory
+  hosts: worker
+  tasks:
+    - name: print variables from inventory
+      ansible.builtin.debug:
+        msg: "The name is {{ name }} and the version is {{ version }}"
