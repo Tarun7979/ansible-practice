@@ -5,9 +5,9 @@
     - name: loop with list
       ansible.builtin.debug:
         msg: "The number is {{ item }}"
-        loop: 
-          - 1
-          - 2
-          - 3
-          - 4
-          - 5
+      loop: 
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
