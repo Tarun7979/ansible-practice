@@ -16,3 +16,10 @@
   - name: print course information
     ansible.builtin.debug:
       msg: "Course is: {{ COURSE }}, Duration: {{ DURATION }}, is live?: {{ IS_LIVE }}, Tools are: {{ TOOLS }}, Concepts are: {{ CONCETPS }}"
+
+
+# Output:
+#TASK [print course information] *****************************************************************************************************************
+#ok: [localhost] => {
+#    "msg": "Course is: DevOps, Duration: 120, is live?: True, Tools are: ['Linux', 'shell', 'Ansible'], Concepts are: {'CI': 'Jenkins', 'SCRIPTING': 'Shell, Ansible, Terraform, Python'}"
+#}
